@@ -14,7 +14,7 @@ function App() {
     setUsername(response.data);
   };
 
-  return <div className="App">My name is {username}</div>;
+  return <div className="App">My name is {username} Dani</div>;
 }
 
 export default App;
