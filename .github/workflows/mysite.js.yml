@@ -1,4 +1,4 @@
-name: mysite.js CI
+name: Mysite.js CI
 
 on:
   push:
@@ -9,6 +9,11 @@ on:
 jobs:
   build:
     runs-on: self-hosted
+
+    strategy:
+      matrix:
+        node-version: [14.x, 16.x, 18.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
       - uses: actions/checkout@v3
